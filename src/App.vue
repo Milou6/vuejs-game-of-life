@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+  <div>
+    <h1>Vuejs Game of life</h1>
+    <Grid msg="My message prop" :lengthX="15" :lengthY="35" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue';
+import Grid from './components/Grid.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    // HelloWorld,
+    Grid,
+  },
+};
 </script>
 
 <style>
